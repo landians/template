@@ -1,4 +1,4 @@
-# Geektime Rust 语言训练营
+# Rust 项目模板配置
 
 ## 环境设置
 
@@ -53,6 +53,9 @@ pipx install pre-commit
 ### 安装 Cargo deny
 
 Cargo deny 是一个 Cargo 插件，可以用于检查依赖的安全性。
+
+执行 `cargo-deny check` 提示 advisory-db 获取不到的错误时，可以删除 ~/.cargo/advisory-db
+然后再次尝试执行 `cargo-deny check` 即可
 
 ```bash
 cargo install --locked cargo-deny
